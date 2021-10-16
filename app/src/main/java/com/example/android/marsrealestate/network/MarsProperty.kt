@@ -18,8 +18,10 @@
 package com.example.android.marsrealestate.network
 
 import com.squareup.moshi.Json
+import kotlinx.android.parcel.Parcelize
 
-class MarsProperty(
+@Parcelize
+data class MarsProperty(
     val id: String,
     @Json(name = "img.src") val imgSrcUrl: String,
     val type: String,
