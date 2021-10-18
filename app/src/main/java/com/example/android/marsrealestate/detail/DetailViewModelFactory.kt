@@ -24,7 +24,7 @@ import com.example.android.marsrealestate.network.MarsProperty
 /**
  * Simple ViewModel factory that provides the MarsProperty and context to the ViewModel.
  */
-class DetailViewModelFactory(
+public class DetailViewModelFactory(
         private val marsProperty: MarsProperty,
         private val application: Application) : ViewModelProvider.Factory {
     @Suppress("unchecked_cast")
